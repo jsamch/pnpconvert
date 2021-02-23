@@ -55,6 +55,7 @@ dependencies {
     testCompile 'org.spockframework:spock-core:1.2-groovy-2.5'
     testCompile group: 'cglib', name: 'cglib-nodep', version: '2.2'
     testCompile group: 'org.objenesis', name: 'objenesis', version: '3.0.1'
+    testCompile 'org.springframework.boot:spring-boot:1.2.1.RELEASE' // For OutputCapture
 
     compile 'net.sf.opencsv:opencsv:2.3'
 
@@ -65,6 +66,10 @@ dependencies {
 
     compile group: 'org.apache.xmlgraphics', name: 'batik-svggen', version: '1.10'
     compile group: 'org.apache.xmlgraphics', name: 'batik-dom', version: '1.10'
+
+    compile 'com.google.api-client:google-api-client:1.30.4'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.30.4'
+    compile 'com.google.apis:google-api-services-sheets:v4-rev581-1.25.0'
 
     clover 'org.openclover:clover:4.2.0'
 }
